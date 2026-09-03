@@ -43,3 +43,17 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# NETRA Python backend
+**/__pycache__/
+**/*.pyc
+**/venv/
+**/.venv/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# NETRA local database
+lib/backend/data/netra.db
