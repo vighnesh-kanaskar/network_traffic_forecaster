@@ -1,0 +1,147 @@
+{
+  "dashboard": {
+    "data_mb": 43.7,
+    "packets": 1824,
+    "packets_per_second": 126.0,
+    "flows": 28,
+    "unique_ips": 17,
+    "risk": 64,
+    "confidence": 87,
+    "current_state": "Reconnaissance",
+    "predicted_state": "Initial Access"
+  },
+
+  "traffic": [
+    {
+      "timestamp": "14:20:10",
+      "source_ip": "192.168.1.10",
+      "destination_ip": "10.0.0.5",
+      "protocol": "TCP",
+      "port": 443,
+      "packets": 42,
+      "bytes": 4820,
+      "status": "normal"
+    },
+    {
+      "timestamp": "14:20:15",
+      "source_ip": "192.168.1.12",
+      "destination_ip": "10.0.0.8",
+      "protocol": "UDP",
+      "port": 53,
+      "packets": 17,
+      "bytes": 1830,
+      "status": "normal"
+    },
+    {
+      "timestamp": "14:20:20",
+      "source_ip": "192.168.1.25",
+      "destination_ip": "10.0.0.15",
+      "protocol": "TCP",
+      "port": 22,
+      "packets": 96,
+      "bytes": 12840,
+      "status": "suspicious"
+    },
+    {
+      "timestamp": "14:20:25",
+      "source_ip": "192.168.1.31",
+      "destination_ip": "10.0.0.20",
+      "protocol": "TCP",
+      "port": 80,
+      "packets": 31,
+      "bytes": 3720,
+      "status": "normal"
+    },
+    {
+      "timestamp": "14:20:30",
+      "source_ip": "192.168.1.45",
+      "destination_ip": "10.0.0.12",
+      "protocol": "TCP",
+      "port": 445,
+      "packets": 113,
+      "bytes": 15670,
+      "status": "suspicious"
+    }
+  ],
+
+  "alerts": [
+    {
+      "id": 1,
+      "timestamp": "14:18:21",
+      "title": "Unusual Port Activity",
+      "description": "Abnormal activity detected on TCP port 22.",
+      "severity": "high"
+    },
+    {
+      "id": 2,
+      "timestamp": "14:16:08",
+      "title": "Traffic Spike Detected",
+      "description": "Traffic volume increased significantly.",
+      "severity": "medium"
+    },
+    {
+      "id": 3,
+      "timestamp": "14:12:44",
+      "title": "New Source IP",
+      "description": "A previously unseen source IP was detected.",
+      "severity": "low"
+    }
+  ],
+
+  "forecast": {
+    "current_state": "Reconnaissance",
+    "predicted_state": "Initial Access",
+    "confidence": 87,
+    "risk": 64,
+    "forecast_window": "5-10 minutes",
+    "evidence": [
+      {
+        "feature": "Port scanning activity",
+        "change": "+18%"
+      },
+      {
+        "feature": "Connection attempts",
+        "change": "+24%"
+      },
+      {
+        "feature": "Unique destination ports",
+        "change": "+13%"
+      },
+      {
+        "feature": "Unusual traffic volume",
+        "change": "+9%"
+      }
+    ]
+  },
+
+  "history": [
+    {
+      "timestamp": "2026-08-26T14:00:00",
+      "current_state": "Normal",
+      "predicted_state": "Reconnaissance",
+      "risk": 24,
+      "confidence": 72
+    },
+    {
+      "timestamp": "2026-08-26T14:05:00",
+      "current_state": "Reconnaissance",
+      "predicted_state": "Scanning",
+      "risk": 41,
+      "confidence": 79
+    },
+    {
+      "timestamp": "2026-08-26T14:10:00",
+      "current_state": "Scanning",
+      "predicted_state": "Reconnaissance",
+      "risk": 53,
+      "confidence": 82
+    },
+    {
+      "timestamp": "2026-08-26T14:15:00",
+      "current_state": "Reconnaissance",
+      "predicted_state": "Initial Access",
+      "risk": 64,
+      "confidence": 87
+    }
+  ]
+}

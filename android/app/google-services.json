@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "827104413595",
+    "project_id": "netra-dafdd",
+    "storage_bucket": "netra-dafdd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827104413595:android:d0ae443ffabf1df2b3833e",
+        "android_client_info": {
+          "package_name": "com.example.network_traffic_forecaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827104413595-8hjud607k3jrvrtgs06ocgckjsed7eu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgGS74v7LcKCxrfuFe9whpb1QOTsENi1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827104413595-8hjud607k3jrvrtgs06ocgckjsed7eu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
